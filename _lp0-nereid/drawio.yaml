@@ -1,4 +1,3 @@
-version: "3.9"
 services:
   drawio:
     container_name: Draw.io
