@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  drawio:
+    container_name: Draw.io
+    image: jgraph/drawio
+    healthcheck:
+     test: curl -f http://localhost:8080/ || exit 1
+    mem_limit: 4g
+    cpu_shares: 768
+    security_opt:
+      - no-new-privileges:true
+    restart: on-failure:5
+    ports:
+      - 5022:8080
