@@ -1,3 +1,4 @@
+#test
 services:
   beszel-agent:
     image: henrygd/beszel-agent
